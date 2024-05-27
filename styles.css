@@ -1,0 +1,119 @@
+/* Reset CSS untuk memastikan konsistensi di berbagai browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid #2980b9; /* Warna border baru yang lebih menarik */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+    color: #34495e;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #3498db; /* Warna border baru yang lebih menarik */
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.3);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="radio"] + label {
+    margin-right: 20px;
+    font-weight: 400;
+    color: #555;
+}
+
+button {
+    margin-top: 30px;
+    padding: 12px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 4px 8px rgba(192, 57, 43, 0.2);
+}
+
+p {
+    margin-top: 30px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+#result {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border: 2px solid #3498db; /* Warna border baru yang lebih menarik */
+    border-radius: 6px;
+    color: #666;
+}
